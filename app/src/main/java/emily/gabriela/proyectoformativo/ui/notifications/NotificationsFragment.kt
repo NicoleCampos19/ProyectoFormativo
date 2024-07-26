@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import emily.gabriela.proyectoformativo.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -22,21 +23,23 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
+        val homeViewModel =
             ViewModelProvider(this).get(NotificationsViewModel::class.java)
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        val fab: FloatingActionButton = binding.fab
+        fab.setOnClickListener {
+            // Realiza alguna acción aquí
         }
         return root
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+
