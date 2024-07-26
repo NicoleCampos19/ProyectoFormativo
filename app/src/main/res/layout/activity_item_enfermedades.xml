@@ -27,7 +27,7 @@
             android:textSize="24sp" />
 
         <ImageView
-            android:id="@+id/menu_button"
+            android:id="@+id/btnEliminar"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_weight="1"

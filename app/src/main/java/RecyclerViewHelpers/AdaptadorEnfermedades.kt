@@ -47,8 +47,9 @@ class AdaptadorEnfermedades(var Datos: List<tbEnfermedades>): RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: ViewHolderEnfermedades, position: Int) {
         val item = Datos[position]
-        val enfermedades = item.Nombre_enfermedad
         val context = holder.itemView.context
+        holder.txtEnfermedadCard.text = item.Nombre_enfermedad
+
         holder.ImageView.setOnClickListener { v: View ->
             showMenu(v, R.menu.popup_menuu, context, item, position)
         }
