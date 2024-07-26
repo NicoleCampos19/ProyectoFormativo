@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //Para quitar lo moradito de los fragments
+        getSupportActionBar()?.hide()
+
         //Para cambiar el colo de la barra
         window.statusBarColor = ContextCompat.getColor(this, R.color.white)
 
