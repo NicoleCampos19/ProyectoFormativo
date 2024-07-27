@@ -23,6 +23,7 @@ class AdaptadorEnfermedades(var Datos: List<tbEnfermedades>): RecyclerView.Adapt
         return ViewHolderEnfermedades(vista)
     }
 
+
     fun eliminarDatos(ID_enfermedad: Int, posicion: Int) {
         val listaDatos = Datos.toMutableList()
         listaDatos.removeAt(posicion)

@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgregarEnfermedades">
+    tools:context=".AgregarEnfermedades"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    >
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieEnfermedad"
