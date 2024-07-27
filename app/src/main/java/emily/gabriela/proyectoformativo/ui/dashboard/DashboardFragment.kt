@@ -2,6 +2,7 @@ package emily.gabriela.proyectoformativo.ui.dashboard
 
 import RecyclerViewHelpers.AdaptadorEnfermedades
 import RecyclerViewHelpers.CarouselAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.carousel.CarouselLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import emily.gabriela.proyectoformativo.AgregarEnfermedades
 import emily.gabriela.proyectoformativo.R
 import emily.gabriela.proyectoformativo.databinding.FragmentDashboardBinding
 import kotlinx.coroutines.CoroutineScope
@@ -38,7 +40,8 @@ class DashboardFragment : Fragment() {
 
         val fab: FloatingActionButton = binding.fab
         fab.setOnClickListener {
-            // Realiza alguna acción aquí
+            val agregar = Intent(requireContext(), AgregarEnfermedades::class.java)
+            startActivity(agregar)
         }
 
         // Configurar el RecyclerView del carrusel

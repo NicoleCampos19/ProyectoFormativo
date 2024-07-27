@@ -24,14 +24,14 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/poppins"
             android:text="Text"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <ImageView
             android:id="@+id/menu_button"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
+            android:layout_marginBottom="35dp"
             android:layout_weight="1"
-            android:layout_marginBottom="40dp"
             app:srcCompat="@drawable/iconotrespuntos" />
 
 
