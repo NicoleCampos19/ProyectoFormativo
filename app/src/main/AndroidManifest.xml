@@ -15,6 +15,12 @@
         android:theme="@style/Theme.ProyectoFormativo"
         tools:targetApi="31">
         <activity
+            android:name=".AgregarMedicamentos"
+            android:exported="false" />
+        <activity
+            android:name=".item_medicamento"
+            android:exported="false" />
+        <activity
             android:name=".AgregarEnfermedades"
             android:exported="false" />
         <activity

@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgregarEnfermedades">
+    tools:context=".AgregarMedicamentos">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieEnfermedad"
+        android:id="@+id/lottieMedicamento"
         android:layout_width="456dp"
         android:layout_height="354dp"
 
@@ -20,10 +20,10 @@
         app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/enfermedad" />
+        app:lottie_rawRes="@raw/medicamento" />
 
     <EditText
-        android:id="@+id/txtEnfermedad"
+        android:id="@+id/txtMedicamento"
         android:layout_width="353dp"
         android:layout_height="49dp"
         android:layout_marginTop="116dp"
@@ -35,22 +35,22 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottieEnfermedad" />
+        app:layout_constraintTop_toBottomOf="@+id/lottieMedicamento" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="395dp"
+        android:layout_height="41dp"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="36dp"
         android:fontFamily="@font/poppins"
-        android:text="¿Hay una nueva enfermedad?"
+        android:text="¿Ingreso un nuevo medicamento?"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtEnfermedad"
+        app:layout_constraintBottom_toTopOf="@+id/txtMedicamento"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -63,11 +63,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/atras" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieVacuna"
+        android:layout_width="108dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarMedicamento"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/vacuna" />
+
     <Button
-        android:id="@+id/btnAgregar"
+        android:id="@+id/btnAgregarMedicamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#60bbbb"
         android:fontFamily="@font/poppins"
         android:text="Agregar"
@@ -76,7 +90,7 @@
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

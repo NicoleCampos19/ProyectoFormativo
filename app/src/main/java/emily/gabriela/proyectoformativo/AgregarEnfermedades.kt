@@ -28,7 +28,7 @@ class AgregarEnfermedades : AppCompatActivity() {
         val txtEnfermedad = findViewById<EditText>(R.id.txtEnfermedad)
 
         imvAtrasc.setOnClickListener {
-            val volverAtras = Intent(this, DashboardViewModel::class.java)
+            val volverAtras = Intent(this, DashboardFragment::class.java)
             startActivity(volverAtras)
         }
     }

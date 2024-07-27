@@ -50,10 +50,11 @@ class DashboardFragment : Fragment() {
 
         // Configura el adaptador con los datos
         val images = listOf(
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3
-            // Agrega más imágenes aquí
+            R.drawable.image4,
+            R.drawable.image5,
+            R.drawable.image6,
+            R.drawable.image7,
+            R.drawable.image8
         )
         carouselRecyclerView.adapter = CarouselAdapter(images)
         val rcvEnfermedades = root.findViewById<RecyclerView>(R.id.rcvEnfermedades)
