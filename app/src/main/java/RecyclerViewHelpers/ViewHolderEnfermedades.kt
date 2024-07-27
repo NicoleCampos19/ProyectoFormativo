@@ -8,5 +8,5 @@ import emily.gabriela.proyectoformativo.R
 
 class ViewHolderEnfermedades (view: View): RecyclerView.ViewHolder(view){
     val txtEnfermedadCard = view.findViewById<TextView>(R.id.txtEnfermedadCard)
-    val ImageView = view.findViewById<ImageView>(R.id.btnEliminar)
+    val ImageView = view.findViewById<ImageView>(R.id.menu_button)
 }
