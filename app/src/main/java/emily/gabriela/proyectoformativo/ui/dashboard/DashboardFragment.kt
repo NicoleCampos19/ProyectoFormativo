@@ -57,23 +57,39 @@ class DashboardFragment : Fragment() {
         rcvEnfermedades.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
 
-        fun verEnfermedades(): List<tbEnfermedades>{
-            val objConexion = ClaseConexion().cadenaConexion()
-            val statement = objConexion?.prepareStatement("select * from tbEnfermedad")!!
-
-            val resultset = statement.executeQuery()
-
+        fun verEnfermedades(): List<tbEnfermedades> {
             val listaEnfermedades = mutableListOf<tbEnfermedades>()
+            val objConexion = ClaseConexion().cadenaConexion()
 
-            while(resultset.next()){
-                val ID_enfermedad = resultset.getInt("ID_enfermedad")
-                val Nombre_enfermedad = resultset.getString("Nombre_enfermedad")
-
-                val enfermedad =tbEnfermedades(ID_enfermedad, Nombre_enfermedad)
-                listaEnfermedades.add(enfermedad)
+            if (objConexion == null) {
+                // Manejo del caso en que la conexión es null
+                println("Error: La conexión a la base de datos es nula.")
+                return listaEnfermedades
             }
+
+            try {
+                val statement = objConexion.prepareStatement("select * from tbEnfermedad")
+                val resultSet = statement.executeQuery()
+
+                while (resultSet.next()) {
+                    val ID_enfermedad = resultSet.getInt("ID_enfermedad")
+                    val Nombre_enfermedad = resultSet.getString("Nombre_enfermedad")
+                    val enfermedad = tbEnfermedades(ID_enfermedad, Nombre_enfermedad)
+                    listaEnfermedades.add(enfermedad)
+                }
+
+                resultSet.close()
+                statement.close()
+            } catch (e: Exception) {
+                e.printStackTrace()
+                println("Error al ejecutar la consulta: ${e.message}")
+            } finally {
+                objConexion.close()
+            }
+
             return listaEnfermedades
         }
+
 
 
         CoroutineScope(Dispatchers.IO).launch{
