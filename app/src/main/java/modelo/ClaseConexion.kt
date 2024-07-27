@@ -12,8 +12,8 @@ class ClaseConexion {
             val ipGabriela = "jdbc:oracle:thin:@192.168.1.13:1521:xe"
             val ipprueba = "jdbc:oracle:thin:@192.168.1.13:1521:xe"
 
-            val usuario = "LuiDev"
-            val contrasena = "210823"
+            val usuario = "proyectoformativo24"
+            val contrasena = "GabEmi"
 
             val conexion = DriverManager.getConnection(ipGabriela, usuario, contrasena)
 

@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnContinuar"
         android:layout_width="149dp"
         android:layout_height="51dp"
         android:layout_marginStart="228dp"
