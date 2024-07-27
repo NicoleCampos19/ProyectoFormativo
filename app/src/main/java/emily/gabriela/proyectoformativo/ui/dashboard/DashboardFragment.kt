@@ -41,6 +41,7 @@ class DashboardFragment : Fragment() {
         val fab: FloatingActionButton = binding.fab
         fab.setOnClickListener {
             val agregar = Intent(requireContext(), AgregarEnfermedades::class.java)
+
             startActivity(agregar)
         }
 
