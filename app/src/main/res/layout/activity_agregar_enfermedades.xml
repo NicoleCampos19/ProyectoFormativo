@@ -34,7 +34,7 @@
         android:fontFamily="@font/poppins"
         android:hint="Ingresala aquí"
         android:inputType="text"
-        android:textSize="15sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieEnfermedad" />

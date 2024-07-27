@@ -3,6 +3,7 @@ package emily.gabriela.proyectoformativo.ui.notifications
 import RecyclerViewHelpers.AdaptadorEnfermedades
 import RecyclerViewHelpers.AdaptadorMedicamento
 import RecyclerViewHelpers.CarouselAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.carousel.CarouselLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import emily.gabriela.proyectoformativo.AgregarEnfermedades
+import emily.gabriela.proyectoformativo.AgregarMedicamentos
 import emily.gabriela.proyectoformativo.R
 import emily.gabriela.proyectoformativo.databinding.FragmentNotificationsBinding
 import kotlinx.coroutines.CoroutineScope
@@ -45,7 +48,9 @@ class NotificationsFragment : Fragment() {
 
         val fab: FloatingActionButton = binding.fab1
         fab.setOnClickListener {
-            // Realiza alguna acción aquí
+            val agregar = Intent(requireContext(), AgregarMedicamentos::class.java)
+
+            startActivity(agregar)
         }
         val carouselRecyclerView = binding.carouselRecyclerView
         carouselRecyclerView.layoutManager = CarouselLayoutManager()

@@ -35,9 +35,6 @@ class AgregarEnfermedades : AppCompatActivity() {
 
         imvAtrasc.setOnClickListener {
 
-            val volverAtras = Intent(this, DashboardFragment::class.java)
-            startActivity(volverAtras)
-
             finish()
         }
 
