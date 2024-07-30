@@ -24,10 +24,10 @@ class AgregarMedicamentos : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
         val imvAtrasc = findViewById<ImageView>(R.id.imvAtras)
         val btnAgregarMedicamento = findViewById<Button>(R.id.btnAgregarMedicamento)
         val txtMedicamento = findViewById<EditText>(R.id.txtMedicamento)
-
         imvAtrasc.setOnClickListener {
 
             finish()

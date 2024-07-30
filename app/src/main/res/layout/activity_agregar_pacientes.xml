@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiePaciente"
+        android:layout_width="351dp"
+        android:layout_height="290dp"
+
+        android:layout_marginBottom="564dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/paciente" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="264dp"
+        android:fontFamily="@font/poppins"
+        android:text="¿Ingresar un nuevo paciente?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_atras" />
+
+    <EditText
+        android:id="@+id/txtNombresPaciente"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="@font/poppins"
+        android:hint="Nombres"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/txtApellidosPaciente"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="@font/poppins"
+        android:hint="Apellidos"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/txtEdadPaciente"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="@font/poppins"
+        android:hint="Edad"
+        android:maxLength="3"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/txtFechaPaciente"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:editable="false"
+        android:fontFamily="@font/poppins"
+        android:hint="Fecha de nacimiento"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/txtNumHabiPaciente"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="@font/poppins"
+        android:hint="Número de habitación"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739"
+        tools:ignore="NotSibling" />
+
+    <EditText
+        android:id="@+id/txtNumCamaPaciente"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:background="@drawable/fondo_dialog"
+        android:fontFamily="@font/poppins"
+        android:hint="Número de cama"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/txtAgregarPaciente"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:text="Agregar Paciente"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:backgroundTint="#60bbbb"
+        android:foregroundTint="#FFFFFF"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        android:drawableEnd="@drawable/paciente_nuevo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spMedicamentoPaciente"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Spinner
+        android:id="@+id/spEnfermedadPaciente"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <TextView
+        android:id="@+id/lblMedicamento"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/poppins"
+        android:text="Medicamento:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spMedicamentoPaciente"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblEnfermedad"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enfermedad:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spMedicamentoPaciente"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

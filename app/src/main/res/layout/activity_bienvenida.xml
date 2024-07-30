@@ -43,7 +43,7 @@
         android:fontFamily="@font/poppins"
         android:text="Bienvenida al Hospital Bloom"
         android:textAlignment="center"
-        android:textColor="@color/material_dynamic_neutral90"
+        android:textColor="@color/white"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

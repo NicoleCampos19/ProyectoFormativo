@@ -27,8 +27,7 @@ class AgregarEnfermedades : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
+        supportActionBar?.hide()
         val imvAtrasc = findViewById<ImageView>(R.id.imvAtras)
         val btnAregar = findViewById<Button>(R.id.btnAgregar)
         val txtEnfermedad = findViewById<EditText>(R.id.txtEnfermedad)
@@ -42,9 +41,8 @@ class AgregarEnfermedades : AppCompatActivity() {
             GlobalScope.launch(Dispatchers.IO){
                 try{
                     val objConexion = ClaseConexion().cadenaConexion()
-                    val agregarEnfermedades = objConexion?.prepareStatement("insert into tbEnfermedad(Nombre_enfermedad, ID_medicamento) values (?, ?)")!!
+                    val agregarEnfermedades = objConexion?.prepareStatement("insert into tbEnfermedad(Nombre_enfermedad) values (?)")!!
                     agregarEnfermedades.setString(1, txtEnfermedad.text.toString())
-                    agregarEnfermedades.setString(2, "")
                     agregarEnfermedades.executeUpdate()
                     withContext(Dispatchers.Main){
                         println("Enfermedad registrada correctamente")

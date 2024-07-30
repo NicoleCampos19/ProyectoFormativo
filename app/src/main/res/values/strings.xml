@@ -3,4 +3,5 @@
     <string name="title_home">Paciente</string>
     <string name="title_dashboard">Enfermedad</string>
     <string name="title_notifications">Medicamentos</string>
+    <string name="nombre_completo">%1$s %2$s</string>
 </resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_detallePaciente">
+
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_atras" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieRegistro"
+        android:layout_width="283dp"
+        android:layout_height="262dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/registro" />
+
+    <TextView
+        android:id="@+id/txtNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1"
+        android:text="Nombre completo"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtNacimiento"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins"
+        android:text="Fecha de nacimiento"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro" />
+
+    <TextView
+        android:id="@+id/txtNumCamaUser"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/poppins"
+        android:text="Número de cama"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/txtEnfermedadUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Enfermedad"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/txtMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:fontFamily="@font/poppins"
+        android:text="Medicamento"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro" />
+
+    <TextView
+        android:id="@+id/txtNumHabitacionUser"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/poppins"
+        android:text="Número de habitación"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/txtEdadUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Edad"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRegistro"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvPacienteMedicamento"
+        android:layout_width="367dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedicamento"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/txtNombreCompleto"
+        android:layout_width="264dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="133dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNacimiento" />
+
+    <TextView
+        android:id="@+id/txtEnfermedadPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnfermedadUser" />
+
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdadUser" />
+
+    <TextView
+        android:id="@+id/txtNumCama"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumCamaUser" />
+
+    <TextView
+        android:id="@+id/txtNumHabitacion"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="#1C1E26"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumHabitacionUser" />
+
+    <ImageButton
+        android:id="@+id/btnBorrar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lottieRegistro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lottieRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrar"
+        app:srcCompat="@drawable/ic_editar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

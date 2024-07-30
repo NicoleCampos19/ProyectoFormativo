@@ -15,6 +15,15 @@
         android:theme="@style/Theme.ProyectoFormativo"
         tools:targetApi="31">
         <activity
+            android:name=".AgregarPacientes"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detallePaciente"
+            android:exported="false" />
+        <activity
+            android:name=".activity_item_paciente"
+            android:exported="false" />
+        <activity
             android:name=".AgregarMedicamentos"
             android:exported="false" />
         <activity
@@ -31,17 +40,17 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

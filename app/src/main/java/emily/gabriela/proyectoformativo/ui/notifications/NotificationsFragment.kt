@@ -24,7 +24,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import modelo.ClaseConexion
-import modelo.tbEnfermedades
 import modelo.tbMedicamento
 
 class NotificationsFragment : Fragment() {
